@@ -1,1 +1,2 @@
 export {default as Logo} from './zamon.svg'
+export {default as India} from './india.jpg'

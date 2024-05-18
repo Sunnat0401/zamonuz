@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -11,16 +11,10 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 import Navbar from '../../Component/Navbar/Navbar';
 import './HomePages.css';
+import { India, Logo } from '../../assets';
+import Button from '../../Component/Button/Button';
 
 const HomePages = () => {
-  const progressCircle = useRef(null);
-  const progressContent = useRef(null);
-
-  const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty('--progress', 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-  };
-
   return (
     <>
       <Navbar />
@@ -28,18 +22,23 @@ const HomePages = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 4000,
+          delay: 250000000,
           disableOnInteraction: false,
         }}
+        loop={true}
         pagination={{
           clickable: true,
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>
+          <img src={India} alt="" />
+          <h2>Siz yoqtirib qolishingiz aniq bo'lgan shahar:</h2>
+          <h1>Duabai</h1>
+        <Button width={'255px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'}/>
+        </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
@@ -48,12 +47,6 @@ const HomePages = () => {
         <SwiperSlide>Slide 7</SwiperSlide>
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
-        <div className="autoplay-progress" slot="container-end">
-          <svg viewBox="0 0 48 48" ref={progressCircle}>
-            <circle cx="24" cy="24" r="20"></circle>
-          </svg>
-          <span ref={progressContent}></span>
-        </div>
       </Swiper>
     </>
   );
