@@ -1,4 +1,5 @@
 import React from 'react'
+import './Button.css'
 const Button = ({borderRadius,width , height, color, bg,  border='2px solid #22B3C1'}) => {
   const styleComp = {
     borderRadius: borderRadius ,
@@ -9,7 +10,7 @@ const Button = ({borderRadius,width , height, color, bg,  border='2px solid #22B
     background: bg,
   }
   return (
-    <button style={styleComp}>Button</button>
+    <button  className='button' style={styleComp}>Yuborish</button>
   )
 }
 
