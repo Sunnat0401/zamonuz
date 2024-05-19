@@ -4,6 +4,7 @@ import HomePages from './Pages/HomePages/HomePages'
 import Offers from './Pages/Offers/Offers'
 import Help from './Pages/Help/Help'
 import About from './Pages/HomePages/About/About'
+import Countries from './Pages/Countries/Countries'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
     <Offers/>
     <Help/>
     <About/>
+    <Countries/>
     </>
     )
 }
