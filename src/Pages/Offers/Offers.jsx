@@ -1,46 +1,127 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay'; // Import autoplay styles
-
-// Import required modules
-import { Pagination, Autoplay } from 'swiper/modules';
+import React from "react";
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import './Offers.css';
+import { India } from "../../assets";
+import Button from "../../Component/Button/Button";
 
 const Offers = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
   return (
     <div className='offers'>
       <div className="container">
         <h1 className="offers-title">Eng Yaxshi Haftalik Takliflarimiz</h1>
         <p className="offers-text">Har bir shaharda faqat siz uchun tuzilgan eng yaxshi haftalik takliflarni kashf eting. O'zingizni sarguzashtlar dunyosida his qiling.</p>
       </div>
-      <Swiper
-        slidesPerView={3} // Corrected to avoid duplicate prop
-        spaceBetween={30}
-        autoplay={{
-          delay: 2000, // Set the delay to 2 seconds (2000ms)
-          disableOnInteraction: false, // Continue autoplay after user interactions
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination, Autoplay]}
-        className="mySwiper"
-      >
-        <SwiperSlide> 
-            
-        </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
+      <Slider {...settings}>
+        <div className="offer-slide">
+          <div className="slider-card">
+            <img src={India} alt="india"  className="slider-img"/>
+            <div className="slider-info">
+                <h3>India</h3>
+                <p className="slider-text"><i class="fa-solid fa-users"></i> Ro'yxatdan o'tganlar</p>
+                <div className="slider-border"></div>
+                <h4>Tur o'z ichiga oladi</h4>
+                <p className="slider-text"><i class="fa-solid fa-car"></i> 5 kunlik sayohat / Mehmonxona</p>
+                <p className="slider-text"><i class="fa-solid fa-plane"></i>Aviabilet</p>
+                <p className="slider-text">  <i class="fa-regular fa-address-book"></i>Manzillar</p>
+                 <Button  width={'150px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
+            </div>
+          </div>
+        </div>
+        <div className="offer-slide">
+        <div className="offer-slide">
+          <div className="slider-card">
+            <img src={India} alt="india"  className="slider-img"/>
+            <div className="slider-info">
+                <h3>India</h3>
+                <p className="slider-text"><i class="fa-solid fa-users"></i> Ro'yxatdan o'tganlar</p>
+                <div className="slider-border"></div>
+                <h4>Tur o'z ichiga oladi</h4>
+                <p className="slider-text"><i class="fa-solid fa-car"></i> 5 kunlik sayohat / Mehmonxona</p>
+                <p className="slider-text"><i class="fa-solid fa-plane"></i>Aviabilet</p>
+                <p className="slider-text">  <i class="fa-regular fa-address-book"></i>Manzillar</p>
+                 <Button  width={'150px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
+            </div>
+          </div>
+        </div>
+        </div>
+        <div className="offer-slide">
+        <div className="offer-slide">
+          <div className="slider-card">
+            <img src={India} alt="india"  className="slider-img"/>
+            <div className="slider-info">
+                <h3>India</h3>
+                <p className="slider-text"><i class="fa-solid fa-users"></i> Ro'yxatdan o'tganlar</p>
+                <div className="slider-border"></div>
+                <h4>Tur o'z ichiga oladi</h4>
+                <p className="slider-text"><i class="fa-solid fa-car"></i> 5 kunlik sayohat / Mehmonxona</p>
+                <p className="slider-text"><i class="fa-solid fa-plane"></i>Aviabilet</p>
+                <p className="slider-text">  <i class="fa-regular fa-address-book"></i>Manzillar</p>
+                 <Button  width={'150px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
+            </div>
+          </div>
+        </div>
+        </div>
+        <div className="offer-slide">
+        <div className="offer-slide">
+          <div className="slider-card">
+            <img src={India} alt="india"  className="slider-img"/>
+            <div className="slider-info">
+                <h3>India</h3>
+                <p className="slider-text"><i class="fa-solid fa-users"></i> Ro'yxatdan o'tganlar</p>
+                <div className="slider-border"></div>
+                <h4>Tur o'z ichiga oladi</h4>
+                <p className="slider-text"><i class="fa-solid fa-car"></i> 5 kunlik sayohat / Mehmonxona</p>
+                <p className="slider-text"><i class="fa-solid fa-plane"></i>Aviabilet</p>
+                <p className="slider-text">  <i class="fa-regular fa-address-book"></i>Manzillar</p>
+                 <Button  width={'150px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
+            </div>
+          </div>
+        </div>
+        </div>
+        <div className="offer-slide">
+        <div className="offer-slide">
+          <div className="slider-card">
+            <img src={India} alt="india"  className="slider-img"/>
+            <div className="slider-info">
+                <h3>India</h3>
+                <p className="slider-text"><i class="fa-solid fa-users"></i> Ro'yxatdan o'tganlar</p>
+                <div className="slider-border"></div>
+                <h4>Tur o'z ichiga oladi</h4>
+                <p className="slider-text"><i class="fa-solid fa-car"></i> 5 kunlik sayohat / Mehmonxona</p>
+                <p className="slider-text"><i class="fa-solid fa-plane"></i>Aviabilet</p>
+                <p className="slider-text">  <i class="fa-regular fa-address-book"></i>Manzillar</p>
+                 <Button  width={'150px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
+            </div>
+          </div>
+        </div>
+        </div>
+        <div className="offer-slide">
+        <div className="offer-slide">
+          <div className="slider-card">
+            <img src={India} alt="india"  className="slider-img"/>
+            <div className="slider-info">
+                <h3>India</h3>
+                <p className="slider-text"><i class="fa-solid fa-users"></i> Ro'yxatdan o'tganlar</p>
+                <div className="slider-border"></div>
+                <h4>Tur o'z ichiga oladi</h4>
+                <p className="slider-text"><i class="fa-solid fa-car"></i> 5 kunlik sayohat / Mehmonxona</p>
+                <p className="slider-text"><i class="fa-solid fa-plane"></i>Aviabilet</p>
+                <p className="slider-text">  <i class="fa-regular fa-address-book"></i>Manzillar</p>
+                 <Button  width={'150px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
+            </div>
+          </div>
+        </div>
+        </div>
+      </Slider>
     </div>
   );
 }
