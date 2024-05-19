@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Offers.css';
-import { India } from "../../assets";
+import { canada, eng, India, istanbul, sauida, usa } from "../../assets";
 import Button from "../../Component/Button/Button";
 
 const Offers = () => {
@@ -13,6 +13,8 @@ const Offers = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 2000,
   };
   return (
     <div className='offers'>
@@ -26,7 +28,7 @@ const Offers = () => {
             <img src={India} alt="india"  className="slider-img"/>
             <div className="slider-info">
                 <h3>India</h3>
-                <p className="slider-text"><i class="fa-solid fa-users"></i> Ro'yxatdan o'tganlar</p>
+                <p className="slider-text"><i class="fa-solid fa-users"></i> Buyurtmalar</p>
                 <div className="slider-border"></div>
                 <h4>Tur o'z ichiga oladi</h4>
                 <p className="slider-text"><i class="fa-solid fa-car"></i> 5 kunlik sayohat / Mehmonxona</p>
@@ -39,27 +41,10 @@ const Offers = () => {
         <div className="offer-slide">
         <div className="offer-slide">
           <div className="slider-card">
-            <img src={India} alt="india"  className="slider-img"/>
+            <img src={sauida} alt="india"  className="slider-img"/>
             <div className="slider-info">
-                <h3>India</h3>
-                <p className="slider-text"><i class="fa-solid fa-users"></i> Ro'yxatdan o'tganlar</p>
-                <div className="slider-border"></div>
-                <h4>Tur o'z ichiga oladi</h4>
-                <p className="slider-text"><i class="fa-solid fa-car"></i> 5 kunlik sayohat / Mehmonxona</p>
-                <p className="slider-text"><i class="fa-solid fa-plane"></i>Aviabilet</p>
-                <p className="slider-text">  <i class="fa-regular fa-address-book"></i>Manzillar</p>
-                 <Button  width={'150px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
-            </div>
-          </div>
-        </div>
-        </div>
-        <div className="offer-slide">
-        <div className="offer-slide">
-          <div className="slider-card">
-            <img src={India} alt="india"  className="slider-img"/>
-            <div className="slider-info">
-                <h3>India</h3>
-                <p className="slider-text"><i class="fa-solid fa-users"></i> Ro'yxatdan o'tganlar</p>
+                <h3>Saudia</h3>
+                <p className="slider-text"><i class="fa-solid fa-users"></i> 300  Buyurtmalar</p>
                 <div className="slider-border"></div>
                 <h4>Tur o'z ichiga oladi</h4>
                 <p className="slider-text"><i class="fa-solid fa-car"></i> 5 kunlik sayohat / Mehmonxona</p>
@@ -73,10 +58,10 @@ const Offers = () => {
         <div className="offer-slide">
         <div className="offer-slide">
           <div className="slider-card">
-            <img src={India} alt="india"  className="slider-img"/>
+            <img src={usa} alt="india"  className="slider-img"/>
             <div className="slider-info">
-                <h3>India</h3>
-                <p className="slider-text"><i class="fa-solid fa-users"></i> Ro'yxatdan o'tganlar</p>
+                <h3>AQSH</h3>
+                <p className="slider-text"><i class="fa-solid fa-users"></i> 500  Buyurtmalar</p>
                 <div className="slider-border"></div>
                 <h4>Tur o'z ichiga oladi</h4>
                 <p className="slider-text"><i class="fa-solid fa-car"></i> 5 kunlik sayohat / Mehmonxona</p>
@@ -90,10 +75,10 @@ const Offers = () => {
         <div className="offer-slide">
         <div className="offer-slide">
           <div className="slider-card">
-            <img src={India} alt="india"  className="slider-img"/>
+            <img src={canada} alt="india"  className="slider-img"/>
             <div className="slider-info">
-                <h3>India</h3>
-                <p className="slider-text"><i class="fa-solid fa-users"></i> Ro'yxatdan o'tganlar</p>
+                <h3>Canada</h3>
+                <p className="slider-text"><i class="fa-solid fa-users"></i>  735  Buyurtmalar</p>
                 <div className="slider-border"></div>
                 <h4>Tur o'z ichiga oladi</h4>
                 <p className="slider-text"><i class="fa-solid fa-car"></i> 5 kunlik sayohat / Mehmonxona</p>
@@ -107,10 +92,27 @@ const Offers = () => {
         <div className="offer-slide">
         <div className="offer-slide">
           <div className="slider-card">
-            <img src={India} alt="india"  className="slider-img"/>
+            <img src={eng} alt="india"  className="slider-img"/>
             <div className="slider-info">
-                <h3>India</h3>
-                <p className="slider-text"><i class="fa-solid fa-users"></i> Ro'yxatdan o'tganlar</p>
+                <h3>Angliya </h3>
+                <p className="slider-text"><i class="fa-solid fa-users"></i>  900 Buyurtmalar</p>
+                <div className="slider-border"></div>
+                <h4>Tur o'z ichiga oladi</h4>
+                <p className="slider-text"><i class="fa-solid fa-car"></i> 5 kunlik sayohat / Mehmonxona</p>
+                <p className="slider-text"><i class="fa-solid fa-plane"></i>Aviabilet</p>
+                <p className="slider-text">  <i class="fa-regular fa-address-book"></i>Manzillar</p>
+                 <Button  width={'150px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
+            </div>
+          </div>
+        </div>
+        </div>
+        <div className="offer-slide">
+        <div className="offer-slide">
+          <div className="slider-card">
+            <img src={istanbul} alt="india"  className="slider-img"/>
+            <div className="slider-info">
+                <h3>Istanbul</h3>
+                <p className="slider-text"><i class="fa-solid fa-users"></i> 4500  Buyurtmalar</p>
                 <div className="slider-border"></div>
                 <h4>Tur o'z ichiga oladi</h4>
                 <p className="slider-text"><i class="fa-solid fa-car"></i> 5 kunlik sayohat / Mehmonxona</p>
