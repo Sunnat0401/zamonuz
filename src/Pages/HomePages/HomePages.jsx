@@ -24,7 +24,7 @@ const HomePages = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 250000000,
+          delay: 2500,
           disableOnInteraction: false,
         }}
         loop={true}

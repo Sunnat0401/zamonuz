@@ -1,3 +1,6 @@
 export {default as Logo} from './zamon.svg'
 export {default as India} from './india.jpg'
 export {default as dubai} from './dubai.jpg'
+export {default as istanbul} from './istanbul.jpg'
+export {default as sauida} from './saudia.jpg'
+export {default as sharm} from './sharm.jpg'
