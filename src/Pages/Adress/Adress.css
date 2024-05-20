@@ -1,3 +1,7 @@
-.about-title{
+.adress-title , .adress-text{ 
     text-align: center;
+    line-height: 22px;
+}
+.adress-title{
+    padding: 20px 0;
 }
