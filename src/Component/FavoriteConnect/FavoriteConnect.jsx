@@ -16,7 +16,7 @@ const FavoriteConnect = () => {
         </div>
         <div class="form-group">
             <label htmlFor="sfds" className='form-label'>Necha kishisiz </label> 
-            <select id="chooseGuests" name="Guests" className="form-input" aria-label="Default select example" onchange="this.form.click()">
+            <select id="chooseGuests" name="Guests" className="form-input " aria-label="Default select example" onchange="this.form.click()">
                     <option selected="">ex. 3 or 4 or 5</option>
                     <option type="checkbox" name="option1" value="1">1</option>
                     <option value="2">2</option>
@@ -27,18 +27,8 @@ const FavoriteConnect = () => {
             <input type="date" id="iasdas"className='form-input' />
         </div>
         </div>
-    </div>
-        
-    
-
-       </form>
-  </div>
-  )
-}
-
-export default FavoriteConnect
-
-{/* <fieldset>
+         
+ <div className='form-bottom'>
 <label for="chooseDestination" class="form-label">Manzilingizni tanlang</label>
 <select id="chooseCategory" name="Destination" class="form-select" aria-label="Default select example" onchange="this.form.click()">
   <option selected="">Antalya</option>
@@ -50,10 +40,10 @@ export default FavoriteConnect
   <option value="England">Angliya</option>
   <option value="USA">AQSh</option> 
 </select>
-</fieldset>
-<fieldset>
-  <label for="chooseDestination" class="form-label">Visa turini tanlang</label>
-  <select name="Destination" class="form-select" aria-label="Default select example" id="visa" onchange="this.form.click()">
+</div>
+<div  className='form-bottom'>
+  <label for="chooseDestination" className="form-label">Visa turini tanlang</label>
+  <select name="Destination" className="form-select" aria-label="Default select example" id="visa" onchange="this.form.click()">
     <option selected="">Country</option> 
     <option value="Europe">Europe</option>
     <option value="England">England</option>
@@ -67,5 +57,16 @@ export default FavoriteConnect
 
 
   </select>
-</fieldset> */}
-{/* <Button width={'155px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} /> */}
+</div> 
+<Button width={'100%'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
+    </div>
+        
+    
+
+       </form>
+  </div>
+  )
+}
+
+export default FavoriteConnect
+

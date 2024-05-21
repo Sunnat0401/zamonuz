@@ -7,8 +7,11 @@ import About from './Pages/HomePages/About/About'
 import Countries from './Pages/Countries/Countries'
 import Adress from './Pages/Adress/Adress'
 import Favorites from './Pages/Favorites/Favorites'
+import Footer from './Component/Footer/Footer'
+import { useTranslation } from 'react-i18next'
 
 const App = () => {
+
   return (
     <>
     <HomePages/>
@@ -18,6 +21,7 @@ const App = () => {
     <Countries/>
     <Adress/>
     <Favorites/>
+    <Footer/>
     </>
     )
 }
