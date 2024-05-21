@@ -2,6 +2,9 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    width: 1250px;
+    padding:  15px;
+    border-bottom: 1px solid #AFAFAF;
 }
 .about-wrapper{
   display: flex;
@@ -12,7 +15,7 @@
 .about-title{
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 2px 10px ;
+    padding: 2px 0 ;
     display: flex;
   }
   .about-text{
@@ -20,17 +23,12 @@
     line-height: 20px;
     color: #AFAFAF;
     display: flex;
-    padding:  10px ;
+    padding:  2px 0 ;
   }
 .about-img{
   width: 350px;
   height:250px;
   border-radius: 30px;
-}
-.about-cards{
-  width: 1000px;
-    padding:  15px;
-    border-bottom: 1px solid #AFAFAF;
 }
 .about-info{
     width: 100%;

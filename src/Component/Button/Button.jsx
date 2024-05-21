@@ -10,7 +10,7 @@ const Button = ({borderRadius,width , height, color, bg,  border='2px solid #22B
     background: bg,
   }
   return (
-    <button  className='button' style={styleComp}>Yuborish</button>
+    <button  className='button' style={styleComp} type='submit'>Yuborish</button>
   )
 }
 

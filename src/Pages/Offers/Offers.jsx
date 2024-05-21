@@ -22,7 +22,8 @@ const Offers = () => {
         <h1 className="offers-title">Eng Yaxshi Haftalik Takliflarimiz</h1>
         <p className="offers-text">Har bir shaharda faqat siz uchun tuzilgan eng yaxshi haftalik takliflarni kashf eting. O'zingizni sarguzashtlar dunyosida his qiling.</p>
       </div>
-      <Slider {...settings} className="offer-slider">
+    <div className="container">
+    <Slider {...settings} className="offer-slider">
         <div className="offer-slide">
           <div className="slider-card">
             <img src={India} alt="india"  className="slider-img"/>
@@ -124,6 +125,7 @@ const Offers = () => {
         </div>
         </div>
       </Slider>
+    </div>
     </div>
   );
 }

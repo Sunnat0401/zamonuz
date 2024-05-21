@@ -1,6 +1,7 @@
 import Button from '../Button/Button'
 import './Footer.css'
 const Footer = () => {
+
   return (
     <div className='footer'>
         <div className="container">

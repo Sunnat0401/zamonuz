@@ -1,18 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './FavoriteConnect.css'
 import Button from '../Button/Button'
+import axios from 'axios'
+import { message } from 'antd'
 const FavoriteConnect = () => {
+  const [loading , setLoading] = useState(false)
+  const SendMessage = ( event) =>{
+    setLoading(true)
+    event.preventDefault();
+    const token = "7004900393:AAGYHAnQhdDlkbJxo4xs-vRbpISIgoTxWR8"
+    const chat_id = 6856618212  ;
+    const url = ` https://api.telegram.org/bot${token}/sendMessage`
+    const name =document.getElementById("name").value
+    const nambers =document.getElementById("numbers").value
+    const person =document.getElementById("chooseGuests").value
+    const dates =document.getElementById("iasdas").value
+    const adress =document.getElementById("chooseCategory").value
+    const visa =document.getElementById("visa").value
+    
+    const sendMessageContent = `Ismi: ${name} \n Familiyasi: ${nambers} necha kishiligi : ${person} \n sanasi: ${dates}manzil : ${adress} \n visa: ${visa}`
+    axios({
+      url : url ,
+      method: 'POST',
+      data: {
+        "chat_id" : chat_id,
+        "text":sendMessageContent
+      }
+    }).then((res) => {
+      message.success("Muvaffaqiyatli")
+      document.getElementById("myForm").reset()
+    }).catch((err) => {
+      message.error("yuborishda xatolik", err)
+    }).finally(()=>setLoading(false))
+  }
   return (
     <div className='favorite-connect'>
     <h1 className='favorite-subject'>O'z <span className='headline'>joyingizni </span> band <span className='headline'>qiling </span></h1>
-    <form className='form-container ' >
-    <div className="form-wrapper">
+    <form className='form-container ' onSubmit={SendMessage} id="myForm">
+    <div className="form-wrapper" >
     <div className="form-row">
     <div class="form-group">
             <label htmlFor="sfds" className='form-label'>Ismingiz </label> 
-            <input type="text" id="sfds"  className='form-input' placeholder="Muhammad"/>
+            <input type="text"  className='form-input' placeholder="Muhammad" id="name"/>
             <label htmlFor="iasdas" className='form-label'>Telefon raqamingiz</label>
-            <input type="text" id="iasdas" className='form-input' placeholder='+998 90 124 95 71'/>
+            <input type="text" className='form-input' placeholder='+998 90 124 95 71'  id="numbers" />
         </div>
         <div class="form-group">
             <label htmlFor="sfds" className='form-label'>Necha kishisiz </label> 
@@ -54,11 +85,9 @@ const FavoriteConnect = () => {
     <option value="India">India</option> 
     <option value="China">China</option> 
     <option value="HongKong">Hong Kong</option>  
-
-
   </select>
 </div> 
-<Button width={'100%'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} />
+<Button width={'100%'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'} type="submit" />
     </div>
         
     
