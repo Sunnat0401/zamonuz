@@ -24,8 +24,6 @@ const Help = () => {
         <div className="container">
           <h1 className="help-title">Visa olishga yordam beramiz !</h1>
           <p className="help-text">Biz sizga oson, tez fursatda va albatta ishonchli viza olishga yordam beramiz.</p>
-        </div>
-  <div className="container">
   <Slider {...settings} className="help-slider">
           <div className="help-slide">
             <div className="slider-card">

@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { Logo } from '../../assets'
 import './Navbar.css'
+import TemporaryDrawer from '../Hamburger/Hamburger'
 const Navbar = () => {
   const {t, i18n} = useTranslation()
   const languages = localStorage.getItem('i18nextLng')
@@ -19,17 +20,19 @@ const Navbar = () => {
                 <li className="navbar-list"><a href="" className="navbar-sublink">Turlar </a> </li>
                 <li className="navbar-list"><a href="" className="navbar-sublink">Kontaktlar</a> </li>
                </ul>
-               <select name="Lng" id='lng' onChange={handleChange} value={languages}>
+               <select name="Lng" id='lng' onChange={handleChange} value={languages} className='navbar-select'>
         <option value="uz">Uz</option>
         <option value="en">En</option>
         <option value="ru">Ru</option>
       </select>
                <ul className="navbar-bnts" name="Lng" id='lng' >
-                <li className='navbar-btn'>  <a href="#" className="navbar-link"><i class="fa-brands fa-telegram"></i></a></li>
-                 <li className='navbar-btn'><a href="#" className="navbar-link"><i class="fa-brands fa-instagram"></i></a></li>
+                <li className='navbar-btn'>  <a href="https://t.me/zamonbiznestour" className="navbar-link"><i class="fa-brands fa-telegram"></i></a></li>
+                 <li className='navbar-btn'><a href="https://www.instagram.com/zamontour" className="navbar-link"><i class="fa-brands fa-instagram"></i></a></li>
                 
                </ul>
-               <div className="modal">Modal</div>
+               <div className="modal">
+                <TemporaryDrawer/>
+                </div>
         </div>
     </div>
   )

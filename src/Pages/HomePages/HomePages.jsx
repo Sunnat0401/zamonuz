@@ -1,50 +1,38 @@
-import React from 'react';
-// Import Swiper React components
+import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
-
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
-import Navbar from '../../Component/Navbar/Navbar';
+import 'swiper/css/pagination';
+import { EffectFade, Navigation, Pagination } from 'swiper/modules';
 import './HomePages.css';
-import { India, Logo } from '../../assets';
-import Button from '../../Component/Button/Button';
 import SwiperSlideCard from '../../Component/SwiperSlideCard/SwiperSlideCard';
 import { slider } from '../../Util/const';
+import Navbar from '../../Component/Navbar/Navbar';
 
 const HomePages = () => {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
   return (
     <>
       <Navbar />
       <Swiper
         spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        loop={true}
-        pagination={{
-          clickable: true,
-        }}
+        effect={'fade'}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        pagination={{ clickable: true }}
+        thumbs={{ swiper: thumbsSwiper }}
+        modules={[EffectFade, Navigation, Pagination]}
+        autoplay={{ delay: 2000, disableOnInteraction: false, loop: true }} // autoplay settings with loop and 2-second delay
         className="mySwiper"
       >
-          {
-            slider.map((item) =>(
-        <SwiperSlide>
-
-              <SwiperSlideCard key={item?.id} {...item}/>
-              </SwiperSlide>
-            ))
-          }
-      
-       
+        {slider.map((item) => (
+          <SwiperSlide key={item?.id}>
+            <div className="swiper-slide-content" style={{ backgroundImage: `url(${item?.img})` }}>
+              <SwiperSlideCard {...item} />
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

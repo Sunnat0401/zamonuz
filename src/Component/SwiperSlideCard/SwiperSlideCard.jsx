@@ -37,7 +37,7 @@ const SwiperSlideCard = ({img, title ,subtitle , swiper, }) => {
                     {swiper?.number3} 
                   </h4>
                 </div>
-                <Button  width={'255px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'}/>
+                <Button  width={'155px'} height={'47px'} bg={'#22B3C1'} color={'#fff'} borderRadius={'12px'}/>
             </div>
         </div>
       </div>

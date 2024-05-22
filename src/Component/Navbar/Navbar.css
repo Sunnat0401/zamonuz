@@ -47,3 +47,35 @@
     align-items: center;
     justify-content: space-between;
 }
+.navbar-select{
+    width:80px;
+    height:25px;
+     border-radius: 6px;
+     background-color: #dcd6d6;
+}
+@media screen and (max-width:996px) {
+    .navbar-lists{
+        display: none;
+    }
+    .modal{
+        display: block;
+    padding: 0 15px ;
+
+    }
+    .navbar-select{
+        display: none;
+    }
+    .navbar .container{
+        justify-content: space-between;
+   }
+   .navbar-bnts{
+    display: none;
+   }
+}
+@media screen and (max-width:996px) {
+    .modal{
+        display: block;
+    padding: 0px ;
+
+    }
+}

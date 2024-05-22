@@ -83,4 +83,127 @@
   .swiper-col span {
     font-weight: bold;
   }
+  @media screen and (max-width:996px)  {
+    .swiper-content {
+      margin: 15px 0;
+    }
+    
+    .swiper-content h2,
+    .swiper-content h1 {
+      margin: 7px 0;
+    }
+    .swiper-col i {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+    
+    .swiper-col h4 {
+      margin: 0;
+    }
+    .swiper-row {
+      margin: 90px auto;
+      width: 500px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 30px;
+      border-radius: 40px;
+    }
+  }
+  @media screen and (max-width:650px)  {
+    .swiper-content {
+      margin: 0px;
+    }
+    
+    .swiper-content h2,
+    .swiper-content h1 {
+      margin: 5px 0;
+    }
+    .swiper-col i {
+      font-size: 18px;
+    }
+    
+    .swiper-col h4 {
+      margin: 0;
+    }
+    .swiper-row {
+      margin: 90px auto;
+      width: 400px;
+    }
+  }
+  @media screen and (max-width:580px)  {
+    .swiper-content {
+      margin: 20px 0;
+      padding: 20px;
+    }
+    
+    .swiper-content h2,
+    .swiper-content h1 {
+      margin: 6px 0;
+    }
+    .swiper-row {
+      margin: 35px auto;
+      background-color: #FFFFFF;
+      width: 370px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding:27px;
+    }
+    .swiper-col i {
+      font-size: 17px;
+      margin-bottom: 7px;
+      padding: 14px;
+      border:  2px solid #22A7B4;
+      border-radius: 50%;
+    }
+    
+    .swiper-col h4 {
+      font-size: 16px;
+    }
+    
+    .swiper-col h4 span {
+      color: #C4B3AF;
+      font-size: 12px;
+      padding: 0 10px;
   
+    }
+  }
+  @media screen and (max-width:505px)  {
+    .swiper-content {
+      margin: 20px 0;
+      padding: 20px;
+    }
+    .swiper-content h2,
+    .swiper-content h1 {
+      width: 300px;
+      margin: 0 auto;
+    }
+    .swiper-row {
+      width: 300px;
+      margin: 35px auto;
+      justify-content: space-between;
+      padding:19px;
+      border-radius: 20px;
+    }
+    .swiper-col {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .swiper-col i {
+      font-size: 14px;
+      padding: 13px;
+    }
+    
+    .swiper-col h4 {
+      font-size: 17px;
+    }
+    
+    .swiper-col h4 span {
+      color: #C4B3AF;
+      font-size: 12px;
+      padding: 0 10px;
+  
+    }
+  }
