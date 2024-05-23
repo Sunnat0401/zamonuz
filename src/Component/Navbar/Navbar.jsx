@@ -4,7 +4,7 @@ import './Navbar.css'
 import TemporaryDrawer from '../Hamburger/Hamburger'
 const Navbar = () => {
   const {t, i18n} = useTranslation()
-  const languages = localStorage.getItem('i18nextLng')
+  const languages = localStorage.getItem('i18nextLng') || 'uz'
   const handleChange = (e) =>{
     const selectedlanguage = e.target.value
     i18n.changeLanguage(selectedlanguage)
@@ -16,9 +16,9 @@ const Navbar = () => {
                <a href="#"><img src={Logo} alt="Logo"  className='navbar-logo'/></a>
                <ul className="navbar-lists">
                 <li className="navbar-list"><a href="" className="navbar-sublink">{t("main")}</a> </li>
-                <li className="navbar-list"><a href="" className="navbar-sublink">Biz haqimizda</a> </li>
-                <li className="navbar-list"><a href="" className="navbar-sublink">Turlar </a> </li>
-                <li className="navbar-list"><a href="" className="navbar-sublink">Kontaktlar</a> </li>
+                <li className="navbar-list"><a href="" className="navbar-sublink">{t("about")}</a> </li>
+                <li className="navbar-list"><a href="" className="navbar-sublink">{t("species")} </a> </li>
+                <li className="navbar-list"><a href="" className="navbar-sublink">{t("contact")}</a> </li>
                </ul>
                <select name="Lng" id='lng' onChange={handleChange} value={languages} className='navbar-select'>
         <option value="uz">Uz</option>

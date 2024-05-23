@@ -33,3 +33,40 @@
     text-align: center;
     color: #fcefef;
 }
+@media screen and (max-width:950px) {
+    .footer-information{
+        width: 700px;
+    }
+    .footer-cards{
+      padding: 30px 0;
+    }
+    .footer-title{
+        font-size: 22px;
+      padding: 10px 0;
+        color: #fff;
+    }
+}
+@media screen and (max-width:736px) {
+    .footer-information{
+        width: 600px;
+    }
+    .footer-cards{
+      padding: 20px 0;
+    }
+    .footer-title{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:630px) {
+        .footer-information{
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+    .footer-cards{
+      padding: 20px 0;
+    }
+    .footer-title{
+        font-size: 18px;
+    }
+}

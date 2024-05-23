@@ -102,11 +102,6 @@ padding: 20px;
   justify-content: center;
   flex-direction: column;
 }
-}
-@media screen and (max-width:1035px) {
-  .countries-cards{
-    width: 900px;
-}
 .countries-title{
   padding:  10px ;
   display: flex;
@@ -124,6 +119,12 @@ padding: 20px;
   padding:  10px ;
   text-align: center;
 }
+}
+@media screen and (max-width:1035px) {
+  .countries-cards{
+    width: 900px;
+}
+
 }
 @media screen and (max-width:935px) {
   .countries-cards{

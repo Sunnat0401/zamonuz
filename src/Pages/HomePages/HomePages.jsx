@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import { EffectFade, Navigation, Pagination } from 'swiper/modules';
 import './HomePages.css';
 import SwiperSlideCard from '../../Component/SwiperSlideCard/SwiperSlideCard';
-import { slider } from '../../Util/const';
+import { sliderItem } from '../../Util/const';
 import Navbar from '../../Component/Navbar/Navbar';
 
 const HomePages = () => {
@@ -26,7 +26,7 @@ const HomePages = () => {
         autoplay={{ delay: 2000, disableOnInteraction: false, loop: true }} // autoplay settings with loop and 2-second delay
         className="mySwiper"
       >
-        {slider.map((item) => (
+        {sliderItem && sliderItem.map((item) => (
           <SwiperSlide key={item?.id}>
             <div className="swiper-slide-content" style={{ backgroundImage: `url(${item?.img})` }}>
               <SwiperSlideCard {...item} />

@@ -1,7 +1,25 @@
-{
-    "main" : "Bosh sahifa" ,
-    "about" : "Biz Haqimizda " ,
-    "species" :"Turlar" ,
-    "contact" :"Kontaktlar"
-   
-}
+    {
+        "main" : "Bosh sahifa" ,
+        "about" : "Biz Haqimizda " ,
+        "species" :"Turlar" ,
+        "contact" :"Kontaktlar",
+        "item1" : {
+            "countries" : "Siz yoqtirib qolishingiz mumkun bo'lgan shahar",
+            "population" :"Aholisi",
+            "area":"Hududi",
+            "price":"O'rtacha narx"
+        },
+        "item2" : {
+            "countries" : "Siz yoqtirib qolishingiz mumkun bo'lgan shahar",
+            "population" :"Aholisi",
+            "area":"Hududi",
+            "price":"O'rtacha narx"
+        },
+        "item3" : {
+            "countries" : "Siz yoqtirib qolishingiz mumkun bo'lgan shahar",
+            "population" :"Aholisi",
+            "area":"Hududi",
+            "price":"O'rtacha narx"
+        }
+      
+    }

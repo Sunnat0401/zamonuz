@@ -1,7 +1,24 @@
 {
-    "main" : "About" ,
-    "about" : "Bsdfs " ,
-    "species" :"Tsdfsdurlar" ,
-    "contact" :"Kontdsfsdfsktlar"
-   
+    "main": "Home",
+    "about": "About Us",
+    "species": "Species",
+    "contact": "Contact",
+    "item1": {
+        "countries": "City you might like to stay",
+        "population": "Population",
+        "area": "Area",
+        "price": "Average price"
+    },
+    "item2": {
+        "countries": "City you might like to stay",
+        "population": "Population",
+        "area": "Area",
+        "price": "Average price"
+    },
+    "item3": {
+        "countries": "City you might like to stay",
+        "population": "Population",
+        "area": "Area",
+        "price": "Average price"
+    }
 }
