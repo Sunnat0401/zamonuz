@@ -182,3 +182,15 @@ body {
 .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
 }
+
+@media (min-width: 1440px) {
+  .swiper-pagination .swiper-pagination-bullet {
+    display: none;
+  }
+}
+.swiper-pagination {
+  display: none !important;
+}
+.swiper-pagination-bullet {
+  display: none !important;
+}
