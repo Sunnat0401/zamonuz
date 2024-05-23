@@ -1,6 +1,5 @@
 .favorite-connect {
     width: 100%;
-    height: 600px;
     background-color: #F9F9F9;
 
   }
@@ -86,4 +85,43 @@
     padding: 0px 20px;
     cursor: pointer;
     transition: border-color 0.3s ease;
+  }
+  @media screen and (max-width:765px) {
+    .favorite-subject {
+      font-size: 30px;
+    }
+    .form-wrapper {
+      width: 600px;
+    }
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .form-group{
+      width: 100%;
+    }
+    .form-input {
+      width: 100%;
+    }
+
+  }
+  @media screen and (max-width:500px) {
+    .form-input {
+      width: 100%;
+      height: 40px;
+    }
+    .form-label {
+      margin-bottom: 0.1em;
+      padding:  10px ;
+  
+    }
+    .form-select{
+      height: 40px;
+    }
+  }
+  @media screen and (max-width:350px) {
+    .favorite-subject{
+      font-size: 22px;
+    }
   }

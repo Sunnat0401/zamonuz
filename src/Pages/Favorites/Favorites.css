@@ -78,3 +78,75 @@
     border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+@media screen and  (max-width: 900px) {
+    .favorites-title {
+        padding: 35px 0px;
+    }
+    
+    .favorites-subtitle {
+        font-size: 40px;
+    }
+    
+    .favorite-cards {
+        margin-top: -150px;
+        gap: 10px; 
+    }
+    
+    .favorite-card {
+        padding: 20px 25px;
+        width:300px;
+        height: 220px;
+    }
+    
+}
+@media screen and  (max-width: 650px) {
+    .favorite-cards {
+        margin-top: -200px;
+        gap: 20px;
+    }
+    
+    .favorite-card {
+        width:450px;
+        height: 220px;
+    }
+    
+  
+}
+@media screen and  (max-width: 500px) {
+    .favorite-cards {
+        margin-top: -200px;
+        gap: 20px;
+    }
+    .favorites-subtitle {
+        font-size: 30px;
+    }
+    .favorite-card {
+        width:350px;
+    }
+}
+@media screen and  (max-width: 400px) {
+    .favorite-cards {
+        margin-top: -220px;
+    }
+    .favorites-title{
+        font-size: 17px;
+    }
+    .favorites-subtitle {
+        font-size: 22px;
+    }
+    .favorite-card {
+        width:100%;
+    }
+    .favorite-card i {
+        font-size: 20px;
+        padding: 20px;
+    }
+    
+    .favorite-text {
+        font-size: 18px;
+    }
+    
+    .favorite-number {
+        font-size: 16px;
+    }
+}
